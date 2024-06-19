@@ -2,4 +2,9 @@
 <img class="figure" [src]="produit.imageUrl" [alt]="produit.name">
 <p>{{ produit.description }}</p>
 <p> {{ produit.prix }} €</p>
+@if(produit.stock != 0) {
+    <p>{{ produit.stock }} en stock</p>
+}@else {
+    <p>En rupture de stock</p>
+}
 <P>donnez votre avis : <button (click)="onLike()">{{likeButtonText}}</button> {{ produit.like }}</P>
