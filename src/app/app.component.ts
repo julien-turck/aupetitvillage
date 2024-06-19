@@ -9,6 +9,9 @@ import { modele } from './modeles/produitsModele';
 })
 export class AppComponent implements OnInit {
   Asterix!: modele;
+  Obelix!: modele;
+  Panoramix!: modele;
+  Cesar!: modele;
 
   ngOnInit(): void {
       this.Asterix = new modele(
@@ -16,6 +19,27 @@ export class AppComponent implements OnInit {
         "family.png",
         "Figurine d'Asterix",
         20,
+        0,
+      );
+      this.Obelix = new modele(
+        "Obelix",
+        "family.png",
+        "Figurine d'Obelix",
+        18,
+        0,
+      );
+      this.Panoramix = new modele(
+        "Panoramix",
+        "family.png",
+        "Figurine de Panoramix",
+        23,
+        0,
+      );
+      this.Cesar = new modele(
+        "Cesar",
+        "family.png",
+        "Figurine de Cesar",
+        25,
         0,
       );
   }

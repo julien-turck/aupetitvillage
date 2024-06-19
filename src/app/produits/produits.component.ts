@@ -10,20 +10,10 @@ export class ProduitsComponent implements OnInit {
 
   @Input() produit!: modele;
 
-  name!: string;
-  imageUrl!: string;
-  description!: string;
-  prix!: number;
-  like!: number;
   likeButtonText!: string;
   userHasLike!: boolean;
 
   ngOnInit(): void {
-      this.name = "Asterix";
-      this.imageUrl = "family.png";
-      this.description = "Figurine d'Asterix";
-      this.prix = 20;
-      this.like = 0;
       this.likeButtonText = "j'aime";
       this.userHasLike = false;
   }
@@ -35,12 +25,12 @@ export class ProduitsComponent implements OnInit {
     }
   }
     addLike() {
-      this.like++;
+      this.produit.likePlus();
       this.likeButtonText = "je n'aime plus";
       this.userHasLike = true;
     }
     dislike() {
-      this.like--;
+      this.produit.likeMoins();
       this.likeButtonText = "j'aime";
       this.userHasLike = false;
     }    
