@@ -1,4 +1,7 @@
 export class modele {
+
+    stock?: number;
+
     constructor(public name: string,
                 public imageUrl: string,
                 public description: string,
@@ -11,6 +14,10 @@ export class modele {
 
     likeMoins(): void {
         this.like--;
+    }
+
+    setStock(stock: number): void {
+        this.stock = stock;
     }
 }
 

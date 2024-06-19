@@ -42,5 +42,10 @@ export class AppComponent implements OnInit {
         25,
         0,
       );
+
+    this.Asterix.setStock(20);
+    this.Obelix.setStock(6);
+    this.Panoramix.setStock(0);
+    this.Cesar.setStock(43);
   }
 }
