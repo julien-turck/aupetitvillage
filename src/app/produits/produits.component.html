@@ -1,5 +1,5 @@
 <h4> {{ produit.name }}</h4>
-<img [src]="produit.imageUrl" [alt]="produit.name">
+<img class="figure" [src]="produit.imageUrl" [alt]="produit.name">
 <p>{{ produit.description }}</p>
 <p> {{ produit.prix }} €</p>
 <P>donnez votre avis : <button (click)="onLike()">{{likeButtonText}}</button> {{ produit.like }}</P>
