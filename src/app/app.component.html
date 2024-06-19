@@ -1,8 +1,7 @@
 <h1>Aupetitvillage</h1>
 <h3>Boutique</h3>
 <div class="shop">
-  <app-produits [produit]="Asterix"/>
-  <app-produits [produit]="Obelix" />
-  <app-produits [produit]="Panoramix" />
-  <app-produits [produit]="Cesar" />
+  @for(produit of produitsArray; track produit.name) {
+    <app-produits [produit]="produit"/>
+  }
 </div>
