@@ -1,5 +1,5 @@
-<h4> {{ name }}</h4>
-<img [src]="imageUrl" [alt]="name">
-<p>{{ description }}</p>
-<p> {{ prix }} €</p>
-<P>donnez votre avis : <button (click)="onLike()">{{likeButtonText}}</button> {{ like }}</P>
+<h4> {{ produit.name }}</h4>
+<img [src]="produit.imageUrl" [alt]="produit.name">
+<p>{{ produit.description }}</p>
+<p> {{ produit.prix }} €</p>
+<P>donnez votre avis : <button (click)="onLike()">{{likeButtonText}}</button> {{ produit.like }}</P>
