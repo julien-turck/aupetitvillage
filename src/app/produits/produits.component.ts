@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { modele } from '../modeles/produitsModele';
+import { produitsService } from '../services/produits.service';
 
 @Component({
   selector: 'app-produits',
@@ -13,6 +14,8 @@ export class ProduitsComponent implements OnInit {
   likeButtonText!: string;
   userHasLike!: boolean;
 
+  constructor(private produitsService: produitsService) {}
+
   ngOnInit(): void {
       this.likeButtonText = "j'aime";
       this.userHasLike = false;
@@ -25,12 +28,12 @@ export class ProduitsComponent implements OnInit {
     }
   }
     addLike() {
-      this.produit.likePlus();
+      this.produitsService.snapProduitsById(this.produit.id, "like");
       this.likeButtonText = "je n'aime plus";
       this.userHasLike = true;
     }
     dislike() {
-      this.produit.likeMoins();
+      this.produitsService.snapProduitsById(this.produit.id, "dislike");
       this.likeButtonText = "j'aime";
       this.userHasLike = false;
     }    
