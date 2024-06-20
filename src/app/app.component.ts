@@ -10,11 +10,6 @@ import { modele } from './modeles/produitsModele';
 export class AppComponent implements OnInit {
   produitsArray!: modele[]
 
-  Asterix!: modele;
-  Obelix!: modele;
-  Panoramix!: modele;
-  Cesar!: modele;
-
   ngOnInit(): void {
     this.produitsArray = [
       new modele(
@@ -22,21 +17,21 @@ export class AppComponent implements OnInit {
         "family.png",
         "Figurine d'Asterix",
         20,
-        0,
+        200,
       ),
       new modele(
         "Obelix",
         "family.png",
         "Figurine d'Obelix",
         18,
-        0,
+        56,
       ),
       new modele(
         "Panoramix",
         "family.png",
         "Figurine de Panoramix",
         23,
-        0,
+        130,
       ),
       new modele(
         "Cesar",
