@@ -19,6 +19,11 @@ export class modele {
     setStock(stock: number): void {
         this.stock = stock;
     }
+
+    withStock(stock: number): modele {
+        this.setStock(stock);
+        return this;
+    }
 }
 
 
