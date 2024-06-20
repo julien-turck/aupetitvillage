@@ -1,0 +1,1 @@
+export type likesType = "like" | "dislike";
