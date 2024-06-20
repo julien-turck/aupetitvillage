@@ -2,7 +2,7 @@
     <h4> {{ produit.name }}</h4>
     <img class="figure" [src]="produit.imageUrl" [alt]="produit.name">
     <p>{{ produit.description }}</p>
-    <p> {{ produit.prix }} €</p>
+    <p> {{ produit.prix | currency: 'EUR' }}</p>
     @if(produit.stock != 0) {
     <p>{{ produit.stock }} en stock</p>
     }@else {
