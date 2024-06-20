@@ -1,10 +1,13 @@
-<h4> {{ produit.name }}</h4>
-<img class="figure" [src]="produit.imageUrl" [alt]="produit.name">
-<p>{{ produit.description }}</p>
-<p> {{ produit.prix }} €</p>
-@if(produit.stock != 0) {
+<div class="card" [ngClass]="{liked: userHasLike}">
+    <h4> {{ produit.name }}</h4>
+    <img class="figure" [src]="produit.imageUrl" [alt]="produit.name">
+    <p>{{ produit.description }}</p>
+    <p> {{ produit.prix }} €</p>
+    @if(produit.stock != 0) {
     <p>{{ produit.stock }} en stock</p>
-}@else {
+    }@else {
     <p>En rupture de stock</p>
-}
-<P>donnez votre avis : <button (click)="onLike()">{{likeButtonText}}</button> {{ produit.like }}</P>
+    }
+    <P>donnez votre avis : <button (click)="onLike()">{{likeButtonText}}</button> <span [ngStyle]="{ color: 'rgb(0,'+ produit.like +',0)'}">{{ produit.like }}</span></P>
+</div>
+
