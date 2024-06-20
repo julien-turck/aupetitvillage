@@ -1,0 +1,7 @@
+<h1>Aupetitvillage</h1>
+<h3>Boutique</h3>
+<div class="shop">
+    @for(produit of produitsArray; track produit.name) {
+    <app-produits [produit]="produit" />
+    }
+</div>
