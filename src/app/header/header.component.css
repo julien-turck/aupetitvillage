@@ -1,0 +1,33 @@
+.header {
+    background-color: #FDD90B;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 700px;
+}
+
+#logo {
+    padding: 1%;
+    width: 10%;
+    height: 10%;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar a {
+    padding-right: 5%;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #DA001E;
+}
+
+.active {
+    color: #DA001E;
+}

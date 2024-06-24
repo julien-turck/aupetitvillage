@@ -1,0 +1,51 @@
+main {
+    background-color: #DA0001;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+}
+
+.intro {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(../../../src/app/images/banner_ordi.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1%;
+    height: fit-content;
+    text-align: center;
+}
+
+.introText {
+    background-color: rgba(128, 128, 128, 0.5);
+    padding: 1%;
+    text-align: justify;
+}
+
+button {
+    background-color: #F9D0A3;
+    color: #151217;
+}
+
+button:hover {
+    color: gray;
+}
+
+@media screen and (min-width: 768px) {
+    .intro {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(../../app/images/banner_tablette.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 1%;
+        height: fit-content;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .intro {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(../../app/images/banner_ordi.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 1%;
+        height: fit-content;
+    }
+}
