@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-
+  title = "Au petit village"
+  title2 = "Confection de figurines 100% gauloises"
 }
