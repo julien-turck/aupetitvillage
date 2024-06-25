@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   title = "Au petit village"
-  title2 = "Confection de figurines 100% gauloises"
+  title2 = "Confection de figurines entièrement gauloises"
 }

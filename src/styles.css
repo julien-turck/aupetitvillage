@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+@font-face {
+    font-family: Comfortaa;
+    src: url(../src/app/polices/Comfortaa-Bold.woff);
+    src: url(../src/app/polices/Comfortaa-Light.woff);
+    src: url(../src/app/polices/Comfortaa-Regular.woff);
+    src: url(../src/app/polices/Comfortaa-Bold.ttf) format('truetype');
+    src: url(../src/app/polices/Comfortaa-Light.ttf) format('truetype');
+    src: url(../src/app/polices/Comfortaa-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: Bubbleboddy;    
+    src: url(../src/app/polices/Bubbleboddy-FatTrial.woff);
+    src: url(../src/app/polices/Bubbleboddy-ExtraLightTrial.woff);    
+    src: url(../src/app/polices/Bubbleboddy-FatTrial.ttf) format('truetype');
+    src: url(../src/app/polices/Bubbleboddy-ExtraLightTrial.ttf) format('truetype');
+}
+@font-face {
+    font-family: Bubbleboddy_Bold;
+    src: url(../src/app/polices/Bubbleboddy-FatTrial.woff);
+    src: url(../src/app/polices/Bubbleboddy-FatTrial.ttf) format('truetype');
+}
+
+* {
+    font-family: Comfortaa, sans-serif;
+    color: #151217;
+}
+
+h1, h2, h3 {
+    font-family: Bubbleboddy, sans-serif;
+}
+
+h4{
+    font-family: Bubbleboddy_Bold, sans-serif;
+}
