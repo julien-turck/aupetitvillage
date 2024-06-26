@@ -34,3 +34,7 @@ h1, h2, h3 {
 h4{
     font-family: Bubbleboddy_Bold, sans-serif;
 }
+
+button {
+    background-color: #F9D0A3;
+}

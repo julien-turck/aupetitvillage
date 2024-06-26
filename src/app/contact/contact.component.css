@@ -7,14 +7,22 @@
 .formu {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
 }
 
 .formu label {
-    padding-bottom: 5%;
+    padding-bottom: 1%;
+}
+
+.idText{
+    width: 200px;
+    height: 30px;
+    margin-right: 5px;
+    margin-bottom: 1%;
 }
 
 .champ {
-    width: 300px;
+    width: 412px;
     height: 30px;
 }
 
