@@ -1,5 +1,5 @@
 main {
-    background-color: #DA0001;
+    background-color: #DA001E;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,7 +23,6 @@ main {
 
 button {
     background-color: #F9D0A3;
-    color: #151217;
 }
 
 button:hover {

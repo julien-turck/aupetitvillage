@@ -1,5 +1,6 @@
 .card {
-    box-sizing: border-box;
+    width: 300px;
+    box-sizing:border-box;
     margin: 20px auto;
     padding: 10px 30px;
     box-shadow: lightgray 4px 4px 20px;
@@ -14,8 +15,12 @@
         font-size: 16px;
     }
 
-    button {
-        background-color: transparent;
+    .description {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+   button {
         box-sizing: border-box;
         padding: 5px 10px;
         border: none;

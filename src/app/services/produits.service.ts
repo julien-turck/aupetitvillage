@@ -9,32 +9,60 @@ export class produitsService {
     private produitsServiceArray: modele[] = [
         new modele(
         "Asterix",
-        "family.png",
+        "asterix.jpg",
         "Figurine d'Asterix",
         30,
         200,
       ).withStock(20),
       new modele(
         "Obelix",
-        "family.png",
+        "obelix.jpg",
         "Figurine d'Obelix",
         19,
         56,
       ).withStock(5),
       new modele(
         "Panoramix",
-        "family.png",
+        "panoramix.jpg",
         "Figurine de Panoramix",
         23,
         130,
       ).withStock(0),
       new modele(
         "Cesar",
-        "family.png",
+        "cesar.jpg",
         "Figurine de Cesar",
         25,
         0,
       ).withStock(17),
+      new modele(
+        "Abraracourcix",
+        "abraracourcix.jpg",
+        "Figurine d'Abraracourcix",
+        30,
+        200,
+      ).withStock(20),
+      new modele(
+        "Asterix au jeux olympiques",
+        "asterix au jeux olympiques.jpg",
+        "Edition limitée tirée des aventures d'Asterix au jeux olympiques",
+        30,
+        200,
+      ).withStock(20),
+      new modele(
+        "Assurancetourix",
+        "assurancetourix.jpg",
+        "Figurine d'Assurancetourix",
+        30,
+        200,
+      ).withStock(20),
+      new modele(
+        "Centurion",
+        "centurion.jpg",
+        "Figurine d'un centurion romain",
+        30,
+        200,
+      ).withStock(20),
     ]
 
     getProduitsServiceArray(): modele[] {

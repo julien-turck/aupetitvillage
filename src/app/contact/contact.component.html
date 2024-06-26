@@ -1,20 +1,22 @@
 <div class="pageForm">
     <h3>Notre formulaire de contact</h3>
-    <p>Veuillez à remplir tous les champs afin de pouvoir vous répondre au mieux</p>
+    <p>Merci de remplir tous les champs afin que nous puissions vous répondre au mieux</p>
     <form class="formu">
-        <label for="firstname">
-            <input class="champ" type="text" name="firstname" placeholder="Prénom" required>
-        </label>
-        <label for="lasttname">
-            <input class="champ" type="text" name="lastname" placeholder="Nom" required>
-        </label>
+        <div class="identity">
+            <label for="firstname">
+                <input class="idText" type="text" name="firstname" placeholder="Prénom" required>
+            </label>
+            <label for="lasttname" >
+                <input class="idText" type="text" name="lastname" placeholder="Nom" required>
+            </label>
+        </div>        
         <label for="object">
             <input class="champ" type="text" name="object" placeholder="Sujet" required>
         </label>
         <label for="email">
             <input class="champ" type="email" name="email" placeholder="Adresse email" required>
         </label>
-        <label for="messagee">
+        <label for="message">
             <textarea class="textarea" name="message" placeholder="Votre message" required></textarea>
         </label>
         <input type="submit" value="Envoyer">
