@@ -1,16 +1,7 @@
 <div class="card" [ngClass]="{liked: userHasLike}">
     <h4> {{ produit.name }}</h4>
-    <img class="figure" [src]="produit.imageUrl" [alt]="produit.name">
-    <div class="description">
-        <p>{{ produit.description }}</p>
-    </div>    
+    <img class="figure" [src]="produit.imageUrl" [alt]="produit.name">   
     <p> {{ produit.prix | currency: 'EUR' }}</p>
-    @if(produit.stock != 0) {
-    <p>{{ produit.stock }} en stock</p>
-    }@else {
-    <p>En rupture de stock</p>
-    }
-    <div><button class="button" (click)="onLike()">{{likeButtonText}}</button> <span [ngStyle]="{ color: 'rgb(0,'+ produit.like +',0)'}">{{ produit.like }}</span></div>
-    <div><button (click)="onViewProduit()">En savoir plus</button></div>
+    <div><button (click)="onViewProduit()">Voir le produit</button></div>
 </div>
 
