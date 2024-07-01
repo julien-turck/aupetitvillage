@@ -69,11 +69,16 @@ export class produitsService {
         return [...this.produitsServiceArray];
     }
 
-    snapProduitsById(produitsId: string, likesType: likesType): void{
+    getProduitById(produitsId: string): modele {
       const foundProduit = this.produitsServiceArray.find(modele => modele.id === produitsId);
       if (!foundProduit){
         throw new Error('Produit non reconnu');
       }
+      return foundProduit;
+    }
+
+    snapProduitsById(produitsId: string, likesType: likesType): void{
+      const foundProduit = this.getProduitById(produitsId);
       foundProduit.likes(likesType);
     }
 }
