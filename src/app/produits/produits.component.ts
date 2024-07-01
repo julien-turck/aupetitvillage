@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { modele } from '../modeles/produitsModele';
 import { produitsService } from '../services/produits.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-produits',
@@ -14,7 +15,8 @@ export class ProduitsComponent implements OnInit {
   likeButtonText!: string;
   userHasLike!: boolean;
 
-  constructor(private produitsService: produitsService) {}
+  constructor(private produitsService: produitsService,
+              private router: Router) {}
 
   ngOnInit(): void {
       this.likeButtonText = "j'aime";
@@ -36,6 +38,9 @@ export class ProduitsComponent implements OnInit {
       this.produitsService.snapProduitsById(this.produit.id, "dislike");
       this.likeButtonText = "j'aime";
       this.userHasLike = false;
+    }
+    onViewProduit(){
+      this.router.navigateByUrl(`produit/${this.produit.id}`);
     }    
 }
 
