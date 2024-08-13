@@ -1,7 +1,7 @@
 <div class="shopPage">
     <h3>Boutique</h3>
     <div class="shop">
-        @for(produit of produitsArray; track produit.name) {
+        @for(produit of produitsArray; track produit.name | sortByPrice) {
         <app-produits [produit]="produit" />
         }
     </div>
