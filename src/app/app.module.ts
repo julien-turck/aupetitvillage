@@ -12,6 +12,7 @@ import { ContactComponent } from './contact/contact.component';
 import { SingleProduitsComponent } from './single-produits/single-produits.component';
 import { SortByPricePipe } from './sort-by-price.pipe';
 import { SortByPriceDecPipe } from './sort-by-price-dec.pipe';
+import { FilterByNamePipe } from './filter-by-name.pipe';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SortByPriceDecPipe } from './sort-by-price-dec.pipe';
     ContactComponent,
     SingleProduitsComponent,
     SortByPricePipe,
-    SortByPriceDecPipe
+    SortByPriceDecPipe,
+    FilterByNamePipe
   ],
   imports: [
     BrowserModule,

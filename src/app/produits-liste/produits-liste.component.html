@@ -1,9 +1,9 @@
 <div class="shopPage">
     <h3>Boutique</h3>
-    <button (click)="sortButtonClick()">{{sortButtonText}}</button>
+    <div><button (click)="sortButtonClick()">{{sortButtonText}}</button><input type="search" placeholder="Votre recherche" />{{mySearchString | filterByName:produitsArray}}</div>
     <div class="shop">
         @if (stateButtonText == true){
-            @for(produit of produitsArray | sortByPrice; track produit.name) {
+            @for(produit of produitsArray | sortByPrice | filterByName:mySearchString; track produit.name) {
             <app-produits [produit]="produit" />
             }
         }

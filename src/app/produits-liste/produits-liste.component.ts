@@ -11,6 +11,7 @@ export class ProduitsListeComponent implements OnInit{
   produitsArray!: modele[];
   sortButtonText = "Trier par prix décroissant";
   stateButtonText = true;
+  mySearchString = [];
 
   constructor (private produitsServiceListe: produitsService) {}
 
