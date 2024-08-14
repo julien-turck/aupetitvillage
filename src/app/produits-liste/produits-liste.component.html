@@ -1,8 +1,16 @@
 <div class="shopPage">
     <h3>Boutique</h3>
+    <button (click)="sortButtonClick()">{{sortButtonText}}</button>
     <div class="shop">
-        @for(produit of produitsArray; track produit.name | sortByPrice) {
-        <app-produits [produit]="produit" />
+        @if (stateButtonText == true){
+            @for(produit of produitsArray | sortByPrice; track produit.name) {
+            <app-produits [produit]="produit" />
+            }
         }
+        @else {
+            @for(produit of produitsArray | sortByPriceDec; track produit.name) {
+            <app-produits [produit]="produit" />
+            }
+        }    
     </div>
 </div>
