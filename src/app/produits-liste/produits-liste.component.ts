@@ -1,7 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { modele } from '../modeles/produitsModele';
 import { produitsService } from '../services/produits.service';
-
 @Component({
   selector: 'app-produits-liste',
   templateUrl: './produits-liste.component.html',
@@ -11,7 +10,7 @@ export class ProduitsListeComponent implements OnInit{
   produitsArray!: modele[];
   sortButtonText = "Trier par prix décroissant";
   stateButtonText = false;
-  searchText!: string;
+  searchText="";
 
   constructor (private produitsServiceListe: produitsService) {}
 
