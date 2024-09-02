@@ -8,21 +8,20 @@ main {
     padding: 10px 30px;
     box-shadow: lightgray 4px 4px 20px;
     background-color: white;
-
     h4 {
         margin-bottom: 0;
+        font-size: 20px;
+        text-align: center;
     }
-
     p {
         font-weight: 300;
         font-size: 16px;
+        text-align: justify;
     }
-
     .description {
         width: 100%;
         flex-wrap: wrap;
     }
-
    button {
         box-sizing: border-box;
         padding: 5px 10px;
@@ -32,14 +31,18 @@ main {
         outline: none;
         font-size: 14px;
         font-weight: 500;
+        margin-bottom: 5px;
     }
 }
-
 .figure{
     width: 200px;
     height: 200px;
 }
-
 .liked{
     background-color: rgba(249, 208, 163, 1);
+}
+@media screen and (min-width: 768px) {
+    .card{
+        width: 50%;
+    }
 }

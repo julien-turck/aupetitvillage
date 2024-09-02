@@ -10,7 +10,8 @@ import { produitsService } from '../services/produits.service';
 export class ProduitsListeComponent implements OnInit{
   produitsArray!: modele[];
   sortButtonText = "Trier par prix décroissant";
-  stateButtonText = true;
+  stateButtonText = false;
+  searchText!: string;
 
   constructor (private produitsServiceListe: produitsService) {}
 

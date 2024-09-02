@@ -5,7 +5,7 @@ export class modele {
     stock?: number;
     id: string;
 
-    constructor(public name: any,
+    constructor(public name: string,
                 public imageUrl: string,
                 public description: string,
                 public prix: number,

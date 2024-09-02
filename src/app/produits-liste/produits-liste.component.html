@@ -1,9 +1,12 @@
 <div class="shopPage">
     <h3>Boutique</h3>
-    <button (click)="sortButtonClick()">{{sortButtonText}}</button>
+    <div class="functions">
+        <button (click)="sortButtonClick()">{{sortButtonText}}</button>
+        <input ng-model="searchText" placeholder="cherche un personnage">
+    </div>
     <div class="shop">
         @if (stateButtonText == true){
-            @for(produit of produitsArray | sortByPrice; track produit.name) {
+            @for(produit of produitsArray | sortByPrice ; track produit.name) {
             <app-produits [produit]="produit" />
             }
         }
