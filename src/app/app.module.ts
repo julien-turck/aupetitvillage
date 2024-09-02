@@ -13,6 +13,9 @@ import { SingleProduitsComponent } from './single-produits/single-produits.compo
 import { SortByPricePipe } from './sort-by-price.pipe';
 import { SortByPriceDecPipe } from './sort-by-price-dec.pipe';
 import { AutocompletePipe } from './autocomplete.pipe';
+import { NgArrayPipesModule } from 'ngx-pipes';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -27,11 +30,13 @@ import { AutocompletePipe } from './autocomplete.pipe';
     SingleProduitsComponent,
     SortByPricePipe,
     SortByPriceDecPipe,
-    AutocompletePipe
+    AutocompletePipe,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgArrayPipesModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()

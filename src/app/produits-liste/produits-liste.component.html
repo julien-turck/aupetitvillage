@@ -2,16 +2,16 @@
     <h3>Boutique</h3>
     <div class="functions">
         <button (click)="sortButtonClick()">{{sortButtonText}}</button>
-        <input ng-model="searchText" placeholder="cherche un personnage">
+        <input type="text" [(ngModel)]="searchText" placeholder="cherche un personnage"/>
     </div>
     <div class="shop">
         @if (stateButtonText == true){
-            @for(produit of produitsArray | sortByPrice ; track produit.name) {
+            @for(produit of produitsArray | sortByPrice | filterBy: ['name']: this.searchText; track produit.name) {
             <app-produits [produit]="produit" />
             }
         }
         @else {
-            @for(produit of produitsArray | sortByPriceDec; track produit.name) {
+            @for(produit of produitsArray | sortByPriceDec | filterBy: ['name']: this.searchText; track produit.name) {
             <app-produits [produit]="produit" />
             }
         }    
