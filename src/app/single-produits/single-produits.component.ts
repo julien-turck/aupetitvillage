@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { modele } from '../modeles/produitsModele';
 import { produitsService } from '../services/produits.service';
-import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-single-produits',
