@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { modele } from '../modeles/produitsModele';
 import { produitsService } from '../services/produits.service';
 @Component({

@@ -1,25 +1,25 @@
 <div class="pageForm">
     <h3>Notre formulaire de contact</h3>
-    <p>Merci de remplir tous les champs afin que nous puissions vous répondre au mieux</p>
-    <form class="formu">
+    <p>{{message}}</p>
+    <form class="formu" #formRef="ngForm">
         <div class="identity">
             <label for="firstname">
-                <input class="idText" type="text" name="firstname" placeholder="Prénom" required>
+                <input class="idText" type="text" [(ngModel)]="prenom" name="firstname" placeholder="Prénom" required>
             </label>
             <label for="lasttname" >
-                <input class="idText" type="text" name="lastname" placeholder="Nom" required>
+                <input class="idText" type="text" [(ngModel)]="nom" name="lastname" placeholder="Nom" required>
             </label>
         </div>        
         <label for="object">
-            <input class="champ" type="text" name="object" placeholder="Sujet" required>
+            <input class="champ" type="text" [(ngModel)]="sujet" name="object" placeholder="Sujet" required>
         </label>
         <label for="email">
-            <input class="champ" type="email" name="email" placeholder="Adresse email" required>
+            <input class="champ" type="email" [(ngModel)]="email" name="email" placeholder="Adresse email" required>
         </label>
         <label for="message">
-            <textarea name="message" placeholder="Votre message" required></textarea>
+            <textarea [(ngModel)]="texte" name="message" placeholder="Votre message" required></textarea>
         </label>
-        <input class="envoi" type="submit" value="Envoyer"/>
+        <input (click)="onSubmit()" class="envoi" type="submit" value="Envoyer">
     </form>
 </div>
 

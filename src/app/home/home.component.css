@@ -25,10 +25,6 @@ button {
     background-color: #F9D0A3;
 }
 
-button:hover {
-    color: gray;
-}
-
 @media screen and (min-width: 768px) {
     .intro {
         background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(../../app/images/banner_tablette.png);
