@@ -12,7 +12,6 @@ import { ContactComponent } from './contact/contact.component';
 import { SingleProduitsComponent } from './single-produits/single-produits.component';
 import { SortByPricePipe } from './sort-by-price.pipe';
 import { SortByPriceDecPipe } from './sort-by-price-dec.pipe';
-import { AutocompletePipe } from './autocomplete.pipe';
 import { NgArrayPipesModule } from 'ngx-pipes';
 import { FormsModule } from '@angular/forms';
 
@@ -29,8 +28,7 @@ import { FormsModule } from '@angular/forms';
     ContactComponent,
     SingleProduitsComponent,
     SortByPricePipe,
-    SortByPriceDecPipe,
-    AutocompletePipe,
+    SortByPriceDecPipe
   ],
   imports: [
     BrowserModule,

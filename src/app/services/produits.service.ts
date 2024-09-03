@@ -1,6 +1,8 @@
 import { Injectable } from "@angular/core";
 import { modele } from "../modeles/produitsModele";
 import { likesType } from "../modeles/like-type.type";
+import { filter } from "rxjs";
+import { FilterByPipe } from "ngx-pipes";
 
 @Injectable({
     providedIn: 'root'
