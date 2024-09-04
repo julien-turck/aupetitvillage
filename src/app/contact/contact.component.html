@@ -1,22 +1,22 @@
 <div class="pageForm">
     <h3>Notre formulaire de contact</h3>
     <p>{{message}}</p>
-    <form class="formu" #formRef="ngForm">
+    <form class="formu">
         <div class="identity">
-            <label for="firstname">
+            <label>
                 <input class="idText" type="text" [(ngModel)]="prenom" name="firstname" placeholder="Prénom" required>
             </label>
-            <label for="lasttname" >
+            <label>
                 <input class="idText" type="text" [(ngModel)]="nom" name="lastname" placeholder="Nom" required>
             </label>
         </div>        
-        <label for="object">
+        <label>
             <input class="champ" type="text" [(ngModel)]="sujet" name="object" placeholder="Sujet" required>
         </label>
-        <label for="email">
+        <label>
             <input class="champ" type="email" [(ngModel)]="email" name="email" placeholder="Adresse email" required>
         </label>
-        <label for="message">
+        <label>
             <textarea [(ngModel)]="texte" name="message" placeholder="Votre message" required></textarea>
         </label>
         <input (click)="onSubmit()" class="envoi" type="submit" value="Envoyer">
