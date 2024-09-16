@@ -5,7 +5,7 @@
         <input type="text" [(ngModel)]="searchText" placeholder="chercher un personnage">
     </div>
     <div class="shop">
-        @if (stateButtonText == true){
+        @if (stateButtonText === true){
             @for(produit of produitsArray | sortByPrice | filterBy: ['name']: this.searchText; track produit.name) {
             <app-produits [produit]="produit"></app-produits>
             }
