@@ -4,26 +4,25 @@ import { produitsService } from '../services/produits.service';
 @Component({
   selector: 'app-produits-liste',
   templateUrl: './produits-liste.component.html',
-  styleUrl: './produits-liste.component.css'
+  styleUrl: './produits-liste.component.css',
 })
-export class ProduitsListeComponent implements OnInit{
+export class ProduitsListeComponent implements OnInit {
   produitsArray!: modele[];
-  sortButtonText = "Trier par prix décroissant";
+  sortButtonText = 'Trier par prix décroissant';
   stateButtonText = false;
-  searchText="";
+  searchText = '';
 
-  constructor (private produitsServiceListe: produitsService) {}
+  constructor(private produitsServiceListe: produitsService) {}
 
   ngOnInit(): void {
     this.produitsArray = this.produitsServiceListe.getProduitsServiceArray();
   }
-  sortButtonClick() {   
-    if (this.stateButtonText == true){
-      this.sortButtonText = "Trier par prix décroissant"
-   }
-    else {
-      this.sortButtonText = "Trier par prix croissant"
+  sortButtonClick() {
+    if (this.stateButtonText === true) {
+      this.sortButtonText = 'Trier par prix décroissant';
+    } else {
+      this.sortButtonText = 'Trier par prix croissant';
     }
-    this.stateButtonText = !this.stateButtonText
+    this.stateButtonText = !this.stateButtonText;
   }
 }

@@ -7,7 +7,7 @@
             <p>Toutes nos figurines sont dessinées et imprimées en 3D à partir de bobines en PLA, matière bioplastique compostable.<br> Elles sont églament peintes à la main par nos soins, afin de conserver leur authenticité toute particulière.</p>
         </div>
         <p> {{ produit.prix | currency: 'EUR' }}</p>
-        @if(produit.stock != 0) {
+        @if(produit.stock !== 0) {
         <p>{{ produit.stock }} en stock</p>
         }@else {
         <p>En rupture de stock</p>
